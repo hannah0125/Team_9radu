@@ -32,6 +32,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Zone4/Z4_S8_Expand.unity
     guid: b78e657a4c9028a48a4d3aa97a7418a8
+  - enabled: 1
+    path: Assets/Scenes/Zone5/Z5_S9_Limit.unity
+    guid: 9902bcf0179460f469e02ef00528f0f4
+  - enabled: 1
+    path: Assets/Scenes/Zone5/Z5_S10_Expand.unity
+    guid: 1e1cea827b0a234488834b43bc0d23c6
+  - enabled: 1
+    path: Assets/Scenes/Zone6/Z6_S11_Limit.unity
+    guid: 2d33059da4de20848ab7a155b169d24f
+  - enabled: 1
+    path: Assets/Scenes/Zone6/Z6_S12_Expand.unity
+    guid: a08ecbf6e4cacb54cb51af39210cbc78
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e94f7ac8d074ab447beef0883e65c003, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 35a003d5eedb4db42ba9946bdf5b5f8e, type: 2}
