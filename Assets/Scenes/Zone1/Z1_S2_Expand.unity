@@ -3092,7 +3092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5604728935703354768, guid: 9a732c235f82c484b8b7dba76e75365b, type: 3}
       propertyPath: m_Name
-      value: Player_OVRInput_Combined_V2
+      value: Player_OVRInput_Combined_V2_S2
       objectReference: {fileID: 0}
     - target: {fileID: 5604728935703354768, guid: 9a732c235f82c484b8b7dba76e75365b, type: 3}
       propertyPath: m_IsActive
