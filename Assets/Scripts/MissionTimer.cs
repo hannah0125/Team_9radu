@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
+using JetBrains.Annotations;
 
 public class MissionTimer : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class MissionTimer : MonoBehaviour
     [Header("[연결] 시간을 표시할 TMP 텍스트")]
     public TextMeshProUGUI timerText;
 
-    [Header("[연결] 시간이 끝났을 켜줄 실패 UI 오브젝트")]
+    [Header("[연결] 시간이 끝났을 때 켜줄 실패 UI 오브젝트")]
     public GameObject failWindowUI;
 
     [Header("[연결] 처음에 꺼줄 미션 안내 UI 오브젝트")]
@@ -19,6 +21,9 @@ public class MissionTimer : MonoBehaviour
 
     [Header("[연결] 미션 성공 시 켜줄 완료 UI 오브젝트")]
     public GameObject successWindowUI;
+
+    [Header("[연결] 시간 이외의 미션 실패 UI 오브젝트")]
+    public TextMeshProUGUI FailText;
 
     private bool isTimerRunning = false; // 처음에는 false로 시작해서 멈춰둠!
 
@@ -96,9 +101,39 @@ public class MissionTimer : MonoBehaviour
         Debug.Log("시간 초과! 실패 UI 창을 활성화합니다.");
 
         // 자동으로 워프하는 대신, 숨겨놨던 실패 UI 창을 짠! 하고 켜준다.
+        //if (failWindowUI != null)
+        //{
+        //    failWindowUI.SetActive(true);
+        //}
+        if (FailText != null) FailText.text = "제한 시간 초과! 미션 실패";
+        if (failWindowUI != null) failWindowUI.SetActive(true);
+    }
+
+    // 가스통 폭발 등 '특수 실패' 상황일 때 원격으로 호출할 함수
+    public void FailMissionWithReason(string reasonMessage)
+    {
+        // 1. 타이머를 멈추기 위해 시간 감소 로직이 있다면 꺼주거나, 가짜 플래그 세팅
+        if (!isTimerRunning) return;
+        isTimerRunning = false;
+        if (timerText != null)
+        {
+            timerText.gameObject.SetActive(false);
+        }
+
+        // 2. 실패 UI 패널/오브젝트를 활성화 (기존에 실패했을 때 켜지던 UI 오브젝트 지정)
         if (failWindowUI != null)
         {
             failWindowUI.SetActive(true);
+        }
+
+        // 3. 실패 UI 안에 있는 텍스트 컴포넌트를 찾아서 문구를 강제로 바꿔치기!
+        if (FailText != null)
+        {
+            FailText.text = reasonMessage;
+        }
+        else
+        {
+            Debug.LogWarning("실패 텍스트 컴포넌트(TMP)가 연결되지 않았습니다.");
         }
     }
 }
