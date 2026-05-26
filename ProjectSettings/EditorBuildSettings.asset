@@ -39,10 +39,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Zone5/Z5_S10_Expand.unity
     guid: 1e1cea827b0a234488834b43bc0d23c6
   - enabled: 1
-    path: Assets/Scenes/Zone6/Z6_S11_Limit.unity
+    path: "Assets/Scenes/Zone6-\uC5EC\uAE30\uC11C\uAC00\uC838\uC62C\uAC70\uAC00\uC838\uC624\uAE30/Z6_S11_Limit_Old.unity"
     guid: 2d33059da4de20848ab7a155b169d24f
   - enabled: 1
-    path: Assets/Scenes/Zone6/Z6_S12_Expand.unity
+    path: "Assets/Scenes/Zone6-\uC5EC\uAE30\uC11C\uAC00\uC838\uC62C\uAC70\uAC00\uC838\uC624\uAE30/Z6_S12_Expand_Old.unity"
     guid: a08ecbf6e4cacb54cb51af39210cbc78
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e94f7ac8d074ab447beef0883e65c003, type: 2}

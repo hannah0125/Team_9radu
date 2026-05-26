@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Mission_03
   m_EditorClassIdentifier: 
   missionNumber: 0
-  missionTitle: "\uACF5\uAC04\uC774\uB3D9 \uB2A5\uB825 \uAC15\uD654"
-  missionDescription: "\uD654\uC7AC \uBC1C\uC0DD \uC9C0\uC810\uC73C\uB85C\n\uC774\uB3D9\uD558\uC138\uC694"
+  missionTitle: mission3
+  missionDescription: mission3 Text
   targetSceneName: Z2_S3_Limit

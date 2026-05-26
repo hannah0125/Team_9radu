@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Mission_06
   m_EditorClassIdentifier: 
   missionNumber: 0
-  missionTitle: "\uC815\uBCF4 \uC2B5\uB4DD \uBC0F \uC778\uC9C0 \uAC15\uD654"
-  missionDescription: "\uC704\uD5D8\uBB3C\uC9C8\uC744 \uD53C\uD574\n\uC0DD\uC874\uC790\uB97C
-    \uAD6C\uC870\uD558\uC138\uC694\n\n* HUD\uB97C \uD1B5\uD574\n\uC0AC\uBB3C\uC758
-    \uC815\uBCF4\uB97C \uC804\uB2EC\uBC1B\uC2B5\uB2C8\uB2E4"
+  missionTitle: mission6
+  missionDescription: mission6 Text
   targetSceneName: Z3_S6_Expand
