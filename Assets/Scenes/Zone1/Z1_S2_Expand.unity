@@ -1063,6 +1063,10 @@ PrefabInstance:
       propertyPath: jumpHeight
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8768949427113109877, guid: 9a732c235f82c484b8b7dba76e75365b, type: 3}
+      propertyPath: _enableDynamicResolution
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2364,6 +2368,7 @@ MonoBehaviour:
   failWindowUI: {fileID: 1323651920}
   missionIntroUI: {fileID: 1626647048}
   successWindowUI: {fileID: 1029175836}
+  FailText: {fileID: 0}
 --- !u!114 &1356116851
 MonoBehaviour:
   m_ObjectHideFlags: 0
